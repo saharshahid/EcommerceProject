@@ -147,7 +147,7 @@ body {
 }
 /* Testimonials Section */
 .testimonials {
-  background: ;
+  
   padding: 40px 0;
   text-align: center;
 }
@@ -457,4 +457,88 @@ body {
       display: none;
     }
 
+    /* --- Responsive Header & Sidebar --- */
+@media (max-width: 900px) {
+  .page-width {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+  }
+  .header-icons {
+    margin-top: 10px;
+  }
+}
+
+/* --- Responsive Grid for Cards --- */
+@media (max-width: 900px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .card {
+    flex: 1 1 300px;
+    max-width: 90vw;
+    min-width: 220px;
+  }
+}
+
+/* --- Responsive Images --- */
+@media (max-width: 600px) {
+  .image-container img,
+  .banner img {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+/* --- Responsive Testimonials --- */
+@media (max-width: 900px) {
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .testimonial-card {
+    max-width: 95vw;
+  }
+}
+
+/* --- Responsive Footer --- */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Responsive Floating Buttons --- */
+@media (max-width: 600px) {
+  .go-to-top {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+  .floating-tab {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
 
