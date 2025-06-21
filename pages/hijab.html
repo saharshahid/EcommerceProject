@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hijab Product Gallery</title>
+  <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body>
+   <!-- part1 -->
+<div class="announcement-bar">
+    <p>Free Shipping Above RS 4500 In Pakistan</p>
+</div>
+              <!-- part2 -->
+    <div class="page-width">
+        <div class="announcement-link">
+             
+            <a target="_blank" href="https://www.instagram.com/kef.pk/" title="Kef on Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+                
+            <a target="_blank" href="https://www.facebook.com/pk.kef" title="Kef on Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            
+            <a target="_blank"  href="https://www.youtube.com/@kefpk1248" title="Kef on YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a target="_blank" rel="noopener" href="https://www.tiktok.com/@kef.official" title="Kef on TikTok" >
+                 <i class="fa-brands fa-tiktok"></i>
+             </a>
+    
+    </div>    
+</div> 
+               <!-- part3 -->
+ 
+
+    <header class="header">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div id="sidebar" class="sidebar">
+    <a href="../index.html">Home</a>
+    <a href="abaya.html">Abaya</a>
+    <a href="hijab.html">Hijab</a>
+    <a href="login.html">login</a>
+    <a href="card.html">Card</a>
+  </div>
+ <h1 class="logo">KEF</h1>
+    <div class="header-icons">
+      <span><a href="login.html" title="account">
+        <i class="fa-regular fa-user"></i></a></span>
+      <span><a target="_blank"href="#"><i class="fa-solid fa-magnifying-glass" title="icon-search"></i></a></span>
+      <span><a target="_blank"href="#"><i class="fa-solid fa-bag-shopping" title="icon-bag-minimal"></i></a></span>
+    </div>
+    </header>
+
+  <h1>Hijab Product Collection</h1>
+
+  <div class="filter-buttons">
+    <button class="active" onclick="filterCards('all')">All</button>
+    <button onclick="filterCards('chiffon')">Chiffon</button>
+    <button onclick="filterCards('cotton')">Cotton</button>
+    <button onclick="filterCards('printed')">Printed</button>
+  </div>
+
+  <div class="grid" id="cardGrid">
+    <!-- Cards Row 1 -->
+    <div class="card chiffon">
+      <img src="https://kefpk.com/cdn/shop/files/Cloud_fd64e2d9-1cb2-4a48-af3a-c99cfa213c8f.jpg?v=1747743811&width=720" alt="Chiffon Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Chiffon Elegance</h2>
+        <p class="card-desc">Light and airy for formal events.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+    <div class="card cotton">
+      <img src="https://kefpk.com/cdn/shop/files/AppleGreen1.jpg?v=1747655436&width=720" alt="Cotton Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Cotton Comfort</h2>
+        <p class="card-desc">Soft and breathable for daily wear.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+    <div class="card printed">
+      <img src="https://kefpk.com/cdn/shop/files/Sage2_bb73e3a9-5328-4488-b785-693a21f328d8.jpg?v=1747130079&width=540" alt="Printed Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Printed Pop</h2>
+        <p class="card-desc">Stylish prints for a vibrant look.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+    <div class="card chiffon">
+      <img src="https://kefpk.com/cdn/shop/files/CapeMortuum2_88a10cdb-1fc1-41e1-9ba7-d5edf6774a50.jpg?v=1732090146&width=720" alt="Chiffon Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Graceful Layers</h2>
+        <p class="card-desc">Perfectly draped elegance.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+
+    <!-- Cards Row 2 (Initially Hidden) -->
+    <div class="card cotton hidden">
+      <img src="https://kefpk.com/cdn/shop/files/Platinum_1f28dfa2-e353-4250-af7c-caf8018dc85f.jpg?v=1747993777&width=540" alt="Cotton Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Everyday Cotton</h2>
+        <p class="card-desc">Simple, soft, and modest.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+    <div class="card printed hidden">
+      <img src="https://kefpk.com/cdn/shop/files/Taupe_2_7d7f9afe-5d1d-4b15-9c65-0dbfcd70840b.jpg?v=1747401158&width=540" alt="Printed Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Printed Vibe</h2>
+        <p class="card-desc">Make your outfit pop!</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+    <div class="card cotton hidden">
+      <img src="https://kefpk.com/cdn/shop/files/NavyBlue2_5f832197-b929-43ee-8720-5f2da1befe8d.jpg?v=1727949612&width=720" alt="Chiffon Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Soft Fold</h2>
+        <p class="card-desc">Elegant for any occasion.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+    <div class="card cotton hidden">
+      <img src="https://kefpk.com/cdn/shop/products/crimps-ruby-red-kef-37012680868094.jpg?v=1709203149&width=720" alt="Cotton Hijab">
+      <div class="card-content">
+        <h2 class="card-title">Cotton Viscose</h2>
+        <p class="card-desc">Daily wear with a clean touch.</p>
+        <a href="card.html" class="btn">Add to card</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hijab-load-more">
+    
+    <button class="load-more-hijab-load-more " onclick="showMore()">Load More</button>
+  </div>
+   <a href="#" class="go-to-top">↑ Go to Top</a>
+
+  <!-- foooter -->
+   <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>H E L P</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">F.A.Qs</a></li>
+        <li><a href="#">Colour Disclaimer</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>CONTACT US</h4>
+      <p><strong>Address:</strong> Building 1C, 1st Sunset Commercial Street, Phase 4, Defence, <br>Karachi.</p>
+      <p><strong>Phone:</strong> 0316-2222064</p>
+      <p><strong>Email:</strong> info@kefpk.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>SIGN UP AND SAVE</h4>
+      <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+      <form class="email-signup">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fa-solid fa-envelope"></i></button>
+      </form>
+      
+        <div class="social-icons">
+             
+            <a target="_blank" href="https://www.instagram.com/kef.pk/" title="Kef on Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+            <a target="_blank" href="https://www.facebook.com/pk.kef" title="Kef on Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            
+            <a target="_blank"  href="https://www.youtube.com/@kefpk1248" title="Kef on YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+     
+               
+            <a target="_blank" rel="noopener" href="https://www.tiktok.com/@kef.official" title="Kef on TikTok" >
+                 <i class="fa-brands fa-tiktok"></i>
+               </a></div>
+        
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Kef
+  </div>
+</footer>
+
+
+      
+    <script src="../app.js"></script>
+
+</body>
+</html>

@@ -8,6 +8,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+         /* part1 */
 .announcement-bar {
     background-color: #f3EDEA;
     color:#000000 ;
@@ -21,6 +22,7 @@ body {
     font-family: sans-serif;
     height: 48px;
 } 
+           /* part2 */
 .page-width{
     width: 1000px;
     height:26px ;
@@ -47,149 +49,177 @@ body {
     height: 15px;
 
 }
-
-
-/* .top-bar {
-  background: #f5f0ee;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-} */
-
+        /* part3 */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content:space-between ;
   align-items: center;
   padding: 30px 30px;
   border-bottom: 1px solid #eee;
   margin-bottom: 30px;
   margin-top: 30px;
+ 
+  
   
 } 
 
 .logo {
- 
+ /* margin-left: 580px; */
   font-size: 45px;
   font-weight: bold;
 }
 
-/* .menu-icon {
-  font-size: 26px;
-  cursor: pointer;
-} */
-  /* extra */
-/* 
-.header{
-  height: 600px;
-  font-size: 16px;
-  display: flex;
-  justify-content: flex-start;
-  
-}
-.links-container{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  
-  width: 300px;
-
-  
-}
-.header a{
-  height: auto;
-  width: 100%;
-  padding: 20 30px;
-  text-decoration: none;
-  display: flex;
-  justify-content: flex-start;
-  color: #000000;
-
-}
-
-#side-bar{
-  display: none;
-}
-.open-sidebar-button,.close-sidebar-button {
-  display: none;
-  
-}
-.open-sidebar-button,.close-sidebar-button {
-  display: block;
-  padding: 20px;
-}
-#side-bar-active:checked ~ .links-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-} */
-
 .header-icons span {
   display: inline-block;
   font-size: 20px;
-   margin-left: 40px; 
+   margin-left: 20px; 
   cursor: pointer;
 }
+.header-icons span i {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+.menu-toggle {
+      font-size: 35px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #fff;
+      color: #444;
+      position:sticky ;
+      top: 120px;
+      left: 100px;
+      z-index: 1001;
+    }
 
-.hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    .sidebar {
+      position: fixed;
+      top: 155px;
+      left: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      overflow-y: auto;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .content {
+      padding: 70px 20px 20px 20px;
+    }
+  
+      /* part4 */
+ .banner a {
+  display: block;
+  width: 1180px;
+  height: 390px; 
+   background-image: url('https://kefpk.com/cdn/shop/files/Banner_-_Web_76431acd-f635-4df1-8bdc-574f98a335fb.jpg?v=1743883568&width=1920');
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  
+}  
+/* part5 */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin: 20px 0 20px 0;
+  
+}
+/* Testimonials Section */
+.testimonials {
+  background: ;
+  padding: 40px 0;
   text-align: center;
-  padding: 20px;
-  gap: 20px;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #a67c52;
+  letter-spacing: 2px;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
 }
-
-.hero-img {
-  width: 300px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+.testimonial-card {
+  background: #f7debe;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(229, 169, 169, 0.07);
+  padding: 25px 20px;
+  max-width: 320px;
+  margin: 10px;
+  flex: 1 1 250px;
 }
-
-.hero-center {
-  max-width: 400px;
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
 }
-
-.hero-center h2 {
-  font-size: 48px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  
+.testimonial-card h4 {
+  color: #a67c52;
+  font-weight: 600;
+  margin: 0;
 }
-.hero-center h2 a {
-  text-decoration: none;
-  color: #000000;
+.hidden {
+  display: none;
 }
-.new-arrivals {
-  padding: 10px 10px;
-  border-radius: 20px;
-  border: 1px solid #333;
+.load-more {
+  margin: 20px auto 0 auto;
+  display: block;
+  padding: 10px 30px;
+  background: #a67c52;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  width: 200px;
-  margin-bottom: 20px;
-  background-color: white;
-  font-size: 12px;
+  transition: background 0.2s;
 }
-.new-arrivals i {
-  margin-left: 50px;
-  
-  color: #333;
-  font-size: 14px;
+.load-more:hover {
+  background: #8c6239; 
 }
+/* part7 */
 
-.hero-center p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #444;
+.go-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #a67c52;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  z-index: 999;
+  transition: background 0.2s;
 }
+.go-to-top:hover {
+  background: #8c6239;
+}
+          
 /* reviews */
 .floating-tab {
   position: fixed;
@@ -218,6 +248,7 @@ body {
   background-color: #000;
   color: #fff;
   padding: 60px 40px;
+  margin-top: 40px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -314,5 +345,116 @@ body {
   width: 1000px;
   height: 730px;
 }
+/* hijab page  */
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .filter-buttons button {
+      background-color: #c4a484;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .filter-buttons button:hover,
+    .filter-buttons .active {
+      background-color: #aa8d64;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    
+     .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    } 
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    a.btn,.btn {
+      background: #000000;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+    a.btn:hover,.btn:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    .hijab-load-more {
+      text-align: center;
+      margin-top: 30px;
+    
+  
+    
+    }
+    
+  
+    .load-more-hijab-load-more  {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #9c8669;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
 
 
